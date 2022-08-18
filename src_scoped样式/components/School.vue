@@ -2,7 +2,7 @@
 <!-- 组件的结构 -->
   
   
-  <div>    
+  <div class="test">    
         <h2>学校名称：{{schoolName}}</h2>
         <h2>学校地址：{{address}}</h2>
   </div>
@@ -23,9 +23,9 @@ export default{
 
 </script>
 
-<style>
+<style lang="less" scoped>
 /* 组件的样式 */
-.demo{
+.test{
     background-color: orange;
 }
 </style>

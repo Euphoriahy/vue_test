@@ -8,9 +8,11 @@
 </template>
 
 <script>
+import {mixin} from '../mixin'
 // 组件交互相关的代码（数据、方法等）
 export default{
     name:'Student',
+
     data(){
             return{
                 name:'张三',
@@ -18,11 +20,8 @@ export default{
             }
        
         },
-    methods: {
-        showName(){
-            alert(this.)
-        }
-    },
+    mixins:[mixin]
+    
  }
  
 
