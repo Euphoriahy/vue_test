@@ -297,7 +297,20 @@
 
    3. 备注：若有多个元素需要过度，则需要使用：```<transition-group>```，且每个元素都要指定```key```值。
 
+   4. 第三方库使用 animate.css，下载插件，导包，根据网页提示添加样式class="animate__animated animate__bounce"。
+   enter-active-class
+   leave-active-class
+
 ## vue脚手架配置代理
+
+ axios.get('http://localhost:8080/api1/students').then(
+                response =>{
+                    console.log('请求成功了',response.data)
+                },
+                error =>{
+                    console.log('请求失败了',error.message)
+                }
+            )
 
 ### 方法一
 
@@ -446,7 +459,7 @@ module.exports = {
 
 ### 1.概念
 
-​		在Vue中实现集中式状态（数据）管理的一个Vue插件，对vue应用中多个组件的共享状态进行集中式的管理（读/写），也是一种组件间通信的方式，且适用于任意组件间通信。
+​		在Vue中实现集中式状态（数据）管理的一个Vue插件，对vue应用中多个组件的共享状态进行集中式的管理（读/写），也是一种组件间通信的方式，且适用于任意组件间通信。（在Vue2中默认使用Vuex3版本，Vue3中默认使用Vuex4版本，不能混版本使用）
 
 ### 2.何时使用？
 

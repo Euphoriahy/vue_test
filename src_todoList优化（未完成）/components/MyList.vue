@@ -1,7 +1,9 @@
 <template>
  <ul class="todo-main">
    <!-- 若:todo前不打冒号，则传值为'todoObj'字符串，冒号传递对象 -->
-   <MyItem v-for="todoObj in todos" :key="todoObj.id" :todo="todoObj"/>
+   <MyItem v-for="todoObj in todos" :key="todoObj.id" 
+                                    :todo="todoObj" 
+                                   />
  </ul>
 </template>
 
@@ -12,6 +14,7 @@ import MyItem from './MyItem.vue';
     components:{
       MyItem
     },
+    //接收传递的对象、方法
     props:['todos']
     
  }
